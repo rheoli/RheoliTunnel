@@ -1,0 +1,15 @@
+==============
+ RheoliTunnel
+==============
+
+     SSH-Client
+         | permanent (TCP-Session)
+         |
+         v          dynamic (session-less)
+   RTunnelClientd <-------------------------> RTunnelServerd
+   (rtunnelcd.rb)                             (rtunnelsd.rb)
+                                                    |
+                                                    | permanent (TCP-Session)
+                                                    v
+                                               SSH-Server
+
